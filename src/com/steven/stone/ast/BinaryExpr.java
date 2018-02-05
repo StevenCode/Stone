@@ -10,7 +10,7 @@ public class BinaryExpr extends ASTList{
         super(children);
     }
 
-    public ASTree Left() {
+    public ASTree left() {
         return child(0);
     }
 
