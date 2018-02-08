@@ -152,7 +152,7 @@ public class StoneVM {
             for (int i = 0; i < numOfArgs; i++) {
                 args[i] = stack[sp + i];
             }
-            stack[sp] = ((NativeFunction) value).invoke(args, new ASTList(new ArrayList<>(ASTree)));
+            stack[sp] = ((NativeFunction) value).invoke(args, new ASTList(new ArrayList<ASTree>()));
             pc += 3;
         }else {
             throw new StoneException("bad function call");
